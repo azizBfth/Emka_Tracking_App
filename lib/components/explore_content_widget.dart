@@ -189,7 +189,7 @@ class ExploreContentWidget extends StatelessWidget {
                                       ListTile(
                                         minLeadingWidth: 10,
                                         leading: Icon(
-                                          Icons.speed_outlined,
+                                          Icons.speed_rounded,
                                           color: Colors.white,
                                         ),
                                         title: Text(
@@ -212,35 +212,10 @@ class ExploreContentWidget extends StatelessWidget {
                                           ],
                                         ),
                                       ),
-                                      ListTile(
+                                          ListTile(
                                         minLeadingWidth: 10,
                                         leading: Icon(
-                                          Icons.car_rental,
-                                          color: Colors.white,
-                                        ),
-                                        title: Text(
-                                          language!.tFuel().toString(),
-                                          style: TextStyle(color: Colors.white),
-                                        ),
-                                        trailing: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Text(
-                                              position!.attributes.fuel != null
-                                                  ? getFuel(
-                                                      position!.attributes.fuel)
-                                                  : '--',
-                                              style: TextStyle(
-                                                  color: Colors.grey[350],
-                                                  fontSize: 16),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                      ListTile(
-                                        minLeadingWidth: 10,
-                                        leading: Icon(
-                                          Icons.car_rental,
+                                          Icons.speed_outlined,
                                           color: Colors.white,
                                         ),
                                         title: Text(
@@ -263,10 +238,36 @@ class ExploreContentWidget extends StatelessWidget {
                                           ],
                                         ),
                                       ),
+                                    
                                       ListTile(
                                         minLeadingWidth: 10,
                                         leading: Icon(
-                                          Icons.car_rental,
+                                          Icons.local_gas_station_outlined,
+                                          color: Colors.white,
+                                        ),
+                                        title: Text(
+                                          language!.tFuel().toString(),
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                        trailing: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            Text(
+                                              position!.attributes.fuel != null
+                                                  ? getFuel(
+                                                      position!.attributes.fuel)
+                                                  : '--',
+                                              style: TextStyle(
+                                                  color: Colors.grey[350],
+                                                  fontSize: 16),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ListTile(
+                                        minLeadingWidth: 10,
+                                        leading: Icon(
+                                          Icons.device_thermostat,
                                           color: Colors.white,
                                         ),
                                         title: Text(
@@ -324,7 +325,7 @@ class ExploreContentWidget extends StatelessWidget {
                                       ListTile(
                                         minLeadingWidth: 10,
                                         leading: Icon(
-                                          Icons.car_rental,
+                                          Icons.vpn_key_outlined,
                                           color: Colors.white,
                                         ),
                                         title: Text(
@@ -347,7 +348,7 @@ class ExploreContentWidget extends StatelessWidget {
                                           ? ListTile(
                                               minLeadingWidth: 10,
                                               leading: Icon(
-                                                Icons.car_rental,
+                                                Icons.car_repair_outlined,
                                                 color: Colors.white,
                                               ),
                                               title: Text(
@@ -378,7 +379,7 @@ class ExploreContentWidget extends StatelessWidget {
                                           : ListTile(
                                               minLeadingWidth: 10,
                                               leading: Icon(
-                                                Icons.car_rental,
+                                                Icons.timer,
                                                 color: Colors.white,
                                               ),
                                               title: Text(

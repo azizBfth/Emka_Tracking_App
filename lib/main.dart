@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:emka_gps/models/session.dart';
 import 'package:emka_gps/providers/app_provider.dart';
 import 'package:emka_gps/providers/connectivity_provider.dart';
@@ -25,6 +27,9 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   NotificationService().initNotification();
     runApp(MyApp());
+    HttpOverrides.global = MyHttpOverrides();
+
+
   });
 }
 
@@ -72,5 +77,12 @@ class MyApp extends StatelessWidget {
         onGenerateRoute: routeGenerator.generateRoute,
       ),
     );
+  }
+}
+ class MyHttpOverrides extends HttpOverrides{
+  @override
+  HttpClient createHttpClient(SecurityContext? context){
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port)=> true;
   }
 }

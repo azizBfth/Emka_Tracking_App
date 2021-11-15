@@ -619,7 +619,7 @@ class _GoogleMapState extends State<GoogleMapPage>
                                   route: '/consommation'),*/
                                     buildMenuItem(context,
                                         text: _language.tDevices(),
-                                        icon: Icons.car_rental,
+                                        icon: Icons.directions_car_rounded,
                                         route: '/devices'),
 /*
                                         buildMenuItem(context,
@@ -630,11 +630,11 @@ class _GoogleMapState extends State<GoogleMapPage>
                                     buildMenuItem(context,
                                         text:
                                             _language.tMaintenanceMaintenance(),
-                                        icon: Icons.clean_hands,
+                                        icon: Icons.car_repair_rounded,
                                         route: '/maintenance'),
                                     buildMenuItem(context,
                                         text: _language.tMaintenancePaper(),
-                                        icon: Icons.assignment,
+                                        icon: Icons.event_note_rounded,
                                         route: '/devicePaper'),
                                     /*    
                                        buildMenuItem(context,
@@ -952,7 +952,7 @@ class _GoogleMapState extends State<GoogleMapPage>
                                                   _latLngBounds, 100));
                                         },
                                         icon: Icon(
-                                          FontAwesomeIcons.solidObjectGroup,
+                                          Icons.wifi_protected_setup_rounded,
                                           size: realW(34),
                                           color: Colors.white,
                                         )),
